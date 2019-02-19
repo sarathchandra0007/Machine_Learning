@@ -6,9 +6,9 @@ import pandas as pd
 
 # Importing Data
 dataset = pd.read_csv('Data.csv')
-# Dependent variables
+# Independent variables
 x = dataset.iloc[:, :-1].values
-#Independent Variables
+# Dependent Variables
 y = dataset.iloc[:,  -1].values
 
 # Taking care if missing data
@@ -37,7 +37,7 @@ from sklearn.cross_validation import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
 
 # Feature scaling (euqlidian distance)
-# feature scaling is not required to independendent variables
+# feature scaling is not required to Dependendent variables
 
 from sklearn.preprocessing import StandardScaler
 sc_x = StandardScaler()
